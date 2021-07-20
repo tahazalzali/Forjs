@@ -1,14 +1,37 @@
-main{min-height: 600px;
-h2{    text-align: center;
+$size:100px;
+$path-media:"../../media/";
+@mixin displayed {
+ display: none;   
 }
-article{
-    button{
-        margin-left:10%;
-        margin-right: 10px;
-    }
-}}
-
+@mixin imgsetup {
+    width: 100%;
+    object-fit: fill;
+    padding: auto;
+    margin: auto;
+}
+// #formtest{
+//     @include displayed();
+// }
+// body{
+//     @include displayed();
+// }
+#ammoge{
+@include imgsetup();
+}
 *{
  padding: 0;
  margin: 0;   
+}
+.circle{
+    width: $size;
+    height: $size;
+    
+background-color: black;
+}
+.media{
+    img{
+        width: 100%;
+        object-fit: cover;
+
+    }
 }

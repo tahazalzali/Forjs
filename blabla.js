@@ -324,6 +324,136 @@ taha.sub();
 // }
 
 // );
+// if(screen.orientation.type=="landscape-primary"){
+//     document.body.style.background="yellow";
+// }
+// else if(screen.orientation.type=="portrait-primary"){
+// document.body.style.background="red";
+// };
+// addEventListener("orientationchange",()=>{});
+//you can use addeventlistener without document          
+if((/Mobile|iP(hone|od|ad)|Android|BlackBerry|IEMobile|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/i.test(navigator.userAgent))){
+console.log("phone user");
+}
+else{
+    console.log("copmuter user")
+};
+// var taha=new counter();   
+// taha.add();
+// taha.add();
+// taha.add();
+// taha.sub();
+// var taha=new counter();
+// taha.add();
+// taha.add();
+// taha.add();
+function process() {
+    console.log("hello world");
+}
+//find all inputs in the page
+
+
+//create class TMAS with constructor    
+class TMAS{
+    constructor(){
+        this.name="taha";
+        this.age=25;
+        this.city="tahaz";
+        this.job="developer";
+    }   
+}
+//create an instance of TMAS class
+var taha=new TMAS();
+
+
+
+
+//create function to encrypt text
+function encrypt(text) {
+    var encryptedText = "";
+    for (var i = 0; i < text.length; i++) {
+        encryptedText += text[i] + (text[i] + 1) % 10;
+    }
+    return encryptedText;
+}
+//create function to decrypt text
+function decrypt(text) {
+    var decryptedText = "";
+    for (var i = 0; i < text.length; i++) {
+        decryptedText += text[i] - (text[i] + 1) % 10;
+    }
+    return decryptedText;
+}
+console.log(encrypt("taha"));
+console.log(445);
+console.log(decrypt("tNaNaNaNhNaNaNaN"));
+
+
+//create function to see 
+var userInfo=navigator.userAgent.toLocaleLowerCase();
+
+//get the browser name
+var browserName=userInfo.match(/msie|firefox|chrome|safari|opera/i);
+if(browserName=="msie"){
+    console.log("ie");
+}
+else if(browserName=="firefox"){
+    console.log("firefox");
+}
+else if(browserName=="chrome"){
+    console.log("chrome");
+}   
+else if(browserName=="safari"){
+    console.log("safari");
+}
+else if(browserName=="opera"){
+    console.log("opera");
+}
+else{
+    console.log("not supported");
+}
+
+//get the user info
+var userInfo1=navigator.userAgent.toLocaleLowerCase();
+// function to display for android user
+
+
+if(userInfo.includes("android")){
+        
+document.getElementById("downloadAndroid").style.visibility="visible";
+//get the yesterdays date
+var yesterday=new Date();
+yesterday.setDate(yesterday.getDate()-1);
+document.getElementById("dateTest").innerHTML+=yesterday.toDateString();
+
+console.log(yesterday);
+
+;
+}                            
+else if(userInfo.includes("windows")&&userInfo.includes("10.0")){
+alert("HEY WINDOWS 10");
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+document.getElementById("subtst").addEventListener("click",()=>{
+document.getElementById("formtest").submit();
+});
+document.getElementById("restst").addEventListener("click",()=>{
+    document.getElementById("formtest").reset();
+
+});
+document.getElementById("em").addEventListener("mouseover",()=>{
+    document.getElementById("em").focus();
+});
+document.getElementById("em").addEventListener("mouseout",()=>{
+    document.getElementById("em").blur();
+});
+document.getElementById("psd").addEventListener("mouseover",()=>{
+    document.getElementById("psd").focus();
+});
+document.getElementById("psd").addEventListener("mouseout",()=>{
+    document.getElementById("psd").blur();
+});
+
 class tmaz{
 constructor(){
     var allotid=document.getElementById("allot").value;
