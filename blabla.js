@@ -341,17 +341,23 @@ else{
 // var taha=new counter();   
 // taha.add();
 // taha.add();
-// taha.add();
 // taha.sub();
 // var taha=new counter();
 // taha.add();
 // taha.add();
 // taha.add();
+
 function process() {
     console.log("hello world");
+    window.top.close();
+    
 }
 //find all inputs in the page
 
+function openTest () { 
+
+    window.open("https://tahazalzali.github.io/pr3to2/Project-2")
+ }
 
 //create class TMAS with constructor    
 class TMAS{
